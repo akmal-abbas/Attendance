@@ -8,28 +8,36 @@
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 50px;
+      background-color: #f9f9f9;
     }
-    a {
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #555;
+    }
+    .attendance-btn {
+      padding: 15px 30px;
       font-size: 1.2rem;
-      color: darkgreen;
-      text-decoration: none;
-      font-weight: bold;
+      background-color: darkgreen;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
     }
-    a:hover {
-      text-decoration: underline;
+    .attendance-btn:hover {
+      background-color: #006400;
     }
   </style>
 </head>
 <body>
 
   <h1>Attendance Submission</h1>
-  <p>Click the link below to open the attendance form.</p>
+  <p>Click the button below to open the attendance form.</p>
 
-  <p>
-    <a href="https://forms.office.com/e/snSNz1ThrE" target="_blank">
-      https://forms.office.com/e/snSNz1ThrE
-    </a>
-  </p>
+  <button class="attendance-btn" onclick="window.open('https://forms.office.com/e/aHUZgt96vu', '_blank')">
+    Open Attendance Form
+  </button>
 
 </body>
 </html>
